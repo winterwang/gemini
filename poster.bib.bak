@@ -54,15 +54,4 @@
   publisher = {Japan Epidemiological Association},
 }
 
-@Article{almoosawi2013diurnal,
-  author    = {Almoosawi, S and Prynne, CJ and Hardy, R and Stephen, AM},
-  title     = {Diurnal eating rhythms: association with long-term development of diabetes in the 1946 British birth cohort},
-  journal   = {Nutrition, Metabolism and Cardiovascular Diseases},
-  year      = {2013},
-  volume    = {23},
-  number    = {10},
-  pages     = {1025--1030},
-  publisher = {Elsevier},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}

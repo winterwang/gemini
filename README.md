@@ -1,3 +1,5 @@
+I have modified the tex and sty files to produce poster.pdf for MLCA analyses using the NDNDS RP data. 
+
 # Gemini
 
 Gemini is a modern LaTeX [beamerposter] theme.

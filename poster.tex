@@ -16,6 +16,7 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage[square,sort,comma,numbers]{natbib}
 
 % ====================
 % Lengths
@@ -54,6 +55,18 @@
 
   \begin{block}{Introduction}
 
+The importance of the circadian rhythms has been recognized for long, while its impact on nutrition is still largely unknown. Meal timing has been found to be associated with a wide variety of physiological processes as well as health outcomes\cite{asher2015time}: 
+    \vskip-1.25ex
+    \begin{itemize}
+	\item Skipping breakfast is associated with a higher risk of developing type 2 diabetes (T2D)\cite{uemura2015breakfast}; \\ while replacing fat at breakfast with carbohydrate is associated with lower risk of T2D incidence\cite{almoosawi2013diurnal};
+	\item 
+	\item 
+    \end{itemize}
+
+
+
+Recent evidence suggested that there are three types of eaters (grazers, early eaters, and later eaters) according to the timing of energy consumption.\cite{leech2017temporal,mansukhani2018investigating} 
+
 
 %    \begin{figure}
 %      \centering
@@ -70,13 +83,7 @@
 %
 %  \begin{block}{A block containing a list}
 
-    \begin{itemize}
-      \item \textbf{Mauris tempor} risus nulla, sed ornare
-      \item \textbf{Libero tincidunt} a duis congue vitae
-      \item \textbf{Dui ac pretium} morbi justo neque, ullamcorper
-    \end{itemize}
 
-    Eget augue porta, bibendum venenatis tortor.
 
   \end{block}
 
@@ -136,39 +143,34 @@
 
 
 
-  \begin{block}{Fusce aliquam magna velit}
+%  \begin{block}{Fusce aliquam magna velit}
+%
+%    Et rutrum ex euismod vel. Pellentesque ultricies, velit in fermentum
+%    vestibulum, lectus nisi pretium nibh, sit amet aliquam lectus augue vel
+%    velit. Suspendisse rhoncus massa porttitor augue feugiat molestie. Sed
+%    molestie ut orci nec malesuada. Sed ultricies feugiat est fringilla
+%    posuere.
+%
+%    \begin{figure}
+%      \centering
+%      \begin{tikzpicture}
+%        \begin{axis}[
+%            scale only axis,
+%            no markers,
+%            domain=0:2*pi,
+%            samples=100,
+%            axis lines=center,
+%            axis line style={-},
+%            ticks=none]
+%          \addplot[red] {sin(deg(x))};
+%          \addplot[blue] {cos(deg(x))};
+%        \end{axis}
+%      \end{tikzpicture}
+%      \caption{Another figure caption.}
+%    \end{figure}
+%
+%  \end{block}
 
-    Et rutrum ex euismod vel. Pellentesque ultricies, velit in fermentum
-    vestibulum, lectus nisi pretium nibh, sit amet aliquam lectus augue vel
-    velit. Suspendisse rhoncus massa porttitor augue feugiat molestie. Sed
-    molestie ut orci nec malesuada. Sed ultricies feugiat est fringilla
-    posuere.
-
-    \begin{figure}
-      \centering
-      \begin{tikzpicture}
-        \begin{axis}[
-            scale only axis,
-            no markers,
-            domain=0:2*pi,
-            samples=100,
-            axis lines=center,
-            axis line style={-},
-            ticks=none]
-          \addplot[red] {sin(deg(x))};
-          \addplot[blue] {cos(deg(x))};
-        \end{axis}
-      \end{tikzpicture}
-      \caption{Another figure caption.}
-    \end{figure}
-
-  \end{block}
-
-\end{column}
-
-\separatorcolumn
-
-\begin{column}{\colwidth}
 
   \begin{block}{Nam cursus consequat egestas}
 
@@ -215,6 +217,16 @@
     $$
     \int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}
     $$
+  \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
+
+  \begin{block}
+
 
     Interdum et malesuada fames $\{1, 4, 9, \ldots\}$ ac ante ipsum primis in
     faucibus. Cras eleifend dolor eu nulla suscipit suscipit. Sed lobortis non
@@ -274,9 +286,9 @@
   \end{block}
 
   \begin{block}{References}
-
-    \nocite{*}
-    \footnotesize{\bibliographystyle{plain}\bibliography{poster}}
+    \vskip-1.25ex
+%    \nocite{*}
+    \footnotesize{\bibliographystyle{elsarticle-num}\bibliography{poster}}
 
   \end{block}
 
