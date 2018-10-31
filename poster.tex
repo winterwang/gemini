@@ -1,7 +1,7 @@
 % Gemini theme
 % https://github.com/anishathalye/gemini
 
-\documentclass[final]{beamer}
+\documentclass[final, 20pt]{beamer}
 
 % ====================
 % Packages
@@ -9,7 +9,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usepackage[size=custom,width=84.1,height=118.9,scale=1.0]{beamerposter}
 \usetheme{gemini}
 \usecolortheme{gemini}
 \usepackage{graphicx}
@@ -26,7 +26,7 @@
 \newlength{\sepwidth}
 \newlength{\colwidth}
 \setlength{\sepwidth}{0.025\paperwidth}
-\setlength{\colwidth}{0.3\paperwidth}
+\setlength{\colwidth}{0.45\paperwidth}
 
 \newcommand{\separatorcolumn}{\begin{column}{\sepwidth}\end{column}}
 
@@ -34,11 +34,11 @@
 % Title
 % ====================
 
-\title{Some fancy title: followed by some more text}
+\title{The day-time patterns of carbohydrate intake in the UK adults \\ - results from the NDNS RP (2008-16)}
 
-\author{Alyssa P. Hacker \inst{1} \and Ben Bitdiddle \inst{2} \and Lem E. Tweakit \inst{2}}
+\author{Chaochen Wang \inst{1,2} \and Suzana Almoosawi \inst{3} \and Luigi Palla \inst{1}}
 
-\institute[shortinst]{\inst{1} Some Institute \samelineand \inst{2} Another Institute}
+\institute[shortinst]{\inst{1} Dept Medical Statistics, LSHTM, London, UK; \samelineand \inst{2} Dept Public Health, Aichi Medical University, Aichi, Japan \samelineand \\ \inst{3} Brain, Performance and Nutrition Research Centre Northumbria University, Newcastle, UK}
 
 % ====================
 % Body
@@ -52,32 +52,23 @@
 
 \begin{column}{\colwidth}
 
-  \begin{block}{A block title}
+  \begin{block}{Introduction}
 
-    Some block contents, followed by a diagram, followed by a dummy paragraph.
 
-    \begin{figure}
-      \centering
-      \begin{tikzpicture}[scale=6]
-        \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
-        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
-          -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
-      \end{tikzpicture}
-      \caption{A figure caption.}
-    \end{figure}
+%    \begin{figure}
+%      \centering
+%      \begin{tikzpicture}[scale=6]
+%        \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
+%        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
+%          -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
+%      \end{tikzpicture}
+%      \caption{A figure caption.}
+%    \end{figure}
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies
-    eget libero ac ullamcorper. Integer et euismod ante. Aenean vestibulum
-    lobortis augue, ut lobortis turpis rhoncus sed. Proin feugiat nibh a
-    lacinia dignissim. Proin scelerisque, risus eget tempor fermentum, ex
-    turpis condimentum urna, quis malesuada sapien arcu eu purus.
-
-  \end{block}
-
-  \begin{block}{A block containing a list}
-
-    Nam vulputate nunc felis, non condimentum lacus porta ultrices. Nullam sed
-    sagittis metus. Etiam consectetur gravida urna quis suscipit.
+%
+%  \end{block}
+%
+%  \begin{block}{A block containing a list}
 
     \begin{itemize}
       \item \textbf{Mauris tempor} risus nulla, sed ornare
@@ -89,36 +80,36 @@
 
   \end{block}
 
-  \begin{alertblock}{A highlighted block}
+%  \begin{alertblock}{A highlighted block}
+%
+%    This block catches your eye, so \textbf{important stuff} should probably go
+%    here.
+%
+%    Curabitur eu libero vehicula, cursus est fringilla, luctus est. Morbi
+%    consectetur mauris quam, at finibus elit auctor ac. Aliquam erat volutpat.
+%    Aenean at nisl ut ex ullamcorper eleifend et eu augue. Aenean quis velit
+%    tristique odio convallis ultrices a ac odio.
+%
+%    \begin{itemize}
+%      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In
+%        consequat, nibh sed mattis luctus, augue diam fermentum lectus.
+%      \item \textbf{In euismod erat metus} non ex. Vestibulum luctus augue in
+%        mi condimentum, at sollicitudin lorem viverra.
+%      \item \textbf{Suspendisse vulputate} mauris vel placerat consectetur.
+%        Mauris semper, purus ac hendrerit molestie, elit mi dignissim odio, in
+%        suscipit felis sapien vel ex.
+%    \end{itemize}
+%
+%    Aenean tincidunt risus eros, at gravida lorem sagittis vel. Vestibulum ante
+%    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+%
+%  \end{alertblock}
 
-    This block catches your eye, so \textbf{important stuff} should probably go
-    here.
+%\end{column}
 
-    Curabitur eu libero vehicula, cursus est fringilla, luctus est. Morbi
-    consectetur mauris quam, at finibus elit auctor ac. Aliquam erat volutpat.
-    Aenean at nisl ut ex ullamcorper eleifend et eu augue. Aenean quis velit
-    tristique odio convallis ultrices a ac odio.
+%\separatorcolumn
 
-    \begin{itemize}
-      \item \textbf{Fusce dapibus tellus} vel tellus semper finibus. In
-        consequat, nibh sed mattis luctus, augue diam fermentum lectus.
-      \item \textbf{In euismod erat metus} non ex. Vestibulum luctus augue in
-        mi condimentum, at sollicitudin lorem viverra.
-      \item \textbf{Suspendisse vulputate} mauris vel placerat consectetur.
-        Mauris semper, purus ac hendrerit molestie, elit mi dignissim odio, in
-        suscipit felis sapien vel ex.
-    \end{itemize}
-
-    Aenean tincidunt risus eros, at gravida lorem sagittis vel. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
-
-  \end{alertblock}
-
-\end{column}
-
-\separatorcolumn
-
-\begin{column}{\colwidth}
+%\begin{column}{\colwidth}
 
   \begin{block}{A block containing an enumerated list}
 
@@ -142,6 +133,8 @@
     \end{enumerate}
 
   \end{block}
+
+
 
   \begin{block}{Fusce aliquam magna velit}
 
@@ -170,6 +163,12 @@
     \end{figure}
 
   \end{block}
+
+\end{column}
+
+\separatorcolumn
+
+\begin{column}{\colwidth}
 
   \begin{block}{Nam cursus consequat egestas}
 
@@ -206,11 +205,7 @@
 
   \end{block}
 
-\end{column}
 
-\separatorcolumn
-
-\begin{column}{\colwidth}
 
   \begin{block}{A block containing some math}
 
