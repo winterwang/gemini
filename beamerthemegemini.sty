@@ -40,6 +40,9 @@
 \setbeamerfont{block body}{family=\Lato, size=\Large}
 \setbeamerfont{heading}{family=\Lato,series=\bfseries}
 \setbeamerfont{caption}{size=\small}
+\setbeamerfont{someheading}{family=\Raleway,size=\huge,series=\bfseries}
+\setbeamerfont{somebody}{family=\Lato, size=\Large}
+
 
 % ====================
 % Macros
@@ -95,6 +98,22 @@
   \par\bigskip
   {\usebeamerfont{heading}\usebeamercolor[fg]{heading}#1}\par\smallskip
 }
+
+% someheading
+\newcommand\someheading[1]
+{%
+	\par\bigskip
+	{\usebeamerfont{someheading}\usebeamercolor[fg]{someheading}#1}\par\smallskip
+}
+
+% somebody
+% someheading
+\newcommand\somebody[1]
+{%
+	\par\bigskip
+	{\usebeamerfont{somebody}\usebeamercolor[fg]{somebody}#1}\par\smallskip
+}
+
 
 % Headline
 \setbeamertemplate{headline}
