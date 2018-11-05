@@ -16,7 +16,8 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage[square,sort,comma,numbers]{natbib} % for simplify the format of the references
+\usepackage{tikz} % for adding the logo
 
 
 % ====================
@@ -36,7 +37,7 @@
 % Title
 % ====================
 
-\title{The day-time patterns of carbohydrate intake in the UK adults \\ - results from the NDNS RP (2008-16)}
+\title{The day-time patterns of carbohydrate intake \\ in the UK - results from the NDNS RP (2008-16)}
 
 \author{Chaochen Wang \inst{1,2} \and Suzana Almoosawi \inst{3} \and Luigi Palla \inst{1}}
 
@@ -47,6 +48,31 @@
 % ====================
 
 \begin{document}
+
+\addtobeamertemplate{headline}{} 
+{
+	\begin{tikzpicture}[remember picture,overlay] 
+%	\node [anchor=north east, inner sep=3cm] at (current page.north east) {\includegraphics[height=5cm]{Fig/LSHTM-logo-trans-white.eps}}; 
+    \node [anchor=north east, inner sep=3cm] at ([xshift=1.4cm,yshift=1.3cm]current page.north east)     {\includegraphics[height=6.5cm]{Fig/LSHTM-logo-trans-white.eps}}; 
+	\end{tikzpicture} 
+}
+
+\addtobeamertemplate{headline}{} 
+{
+	\begin{tikzpicture}[remember picture,overlay] 
+	%	\node [anchor=north east, inner sep=3cm] at (current page.north east) {\includegraphics[height=5cm]{Fig/LSHTM-logo-trans-white.eps}}; 
+	\node [anchor=north west, inner sep=3cm] at ([xshift=-1.5cm,yshift=1.5cm]current page.north west) {\includegraphics[height=7cm]{Fig/amu-logo-trans-white.eps}}; %{\includegraphics[height=6.6cm]{Fig/amu-logo-trans-green.eps}};  
+	\end{tikzpicture} 
+}
+
+\addtobeamertemplate{headline}{} 
+{
+	\begin{tikzpicture}[remember picture,overlay] 
+	%	\node [anchor=north east, inner sep=3cm] at (current page.north east) {\includegraphics[height=5cm]{Fig/LSHTM-logo-trans-white.eps}}; 
+	\node [anchor=north west, inner sep=3cm] at ([xshift=7cm,yshift=1.5cm]current page.north west) {\includegraphics[height=7cm]{Fig/suzana-logo-trans-white.eps}}; \end{tikzpicture} 
+}
+
+
 
 \begin{frame}[t]
 \begin{columns}[t]
@@ -98,7 +124,7 @@ This study aims at finding both time and quantity eating patterns specifically f
   \begin{block}{Results}
 %\heading{Day Level Carbohydrate Eating Patterns}
 \heading{Day Level Carbohydrate Eating Patterns}
-	Three CH eating day patterns emerged from 24483 observation days \textbf{(Fig. \ref{fig:daylevel})}. Based on the distribution of CH day patterns among the individuals, three types of CH eaters were defined which could be broadly labelled as low (28.1\%), moderate (28.8\%), and high (43.1\%) CH eaters \textbf{(Fig. \ref{fig:indilevel})}. 
+	Three CH eating day patterns emerged from 24483 observation days \textbf{(Fig. \ref{fig:daylevel})}.  
       \vskip-1.9ex
     \begin{figure}
       \centering
@@ -111,9 +137,10 @@ This study aims at finding both time and quantity eating patterns specifically f
 
 
 \heading{Individual Level Latent Class Solution}
-\vskip-1.9ex
 %  \begin{block}{Individual Level Latent Class Solution}
 %	\vskip-2.45ex
+Based on the distribution of CH day patterns among the individuals, three types of CH eaters were defined which could be broadly labelled as low (28.1\%), moderate (28.8\%), and high (43.1\%) CH eaters \textbf{(Fig. \ref{fig:indilevel})}.
+      \vskip-2.45ex
 	\begin{figure}
 	\centering
 	\includegraphics[width=0.6\textwidth]{Fig/level2.eps}	\vskip-2.45ex
